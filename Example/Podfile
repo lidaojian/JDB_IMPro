@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JDB_IMPro_Example' do
+  pod 'JDB_IMPro', :path => '../'
+
+  target 'JDB_IMPro_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
