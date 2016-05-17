@@ -1,0 +1,6 @@
+framework module JDB_IMPro {
+  umbrella header "JDB_IMPro-umbrella.h"
+
+  export *
+  module * { export * }
+}

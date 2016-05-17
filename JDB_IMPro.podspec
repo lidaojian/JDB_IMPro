@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "JDB_IMPro"
   s.version          = "0.1.0"
-  s.summary          = "A short description of JDB_IMPro."
+  s.summary          = "A short  JDB_IMPro."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,17 +21,29 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/JDB_IMPro"
+  s.homepage         = "https://github.com/lidaojian/JDB_IMPro"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "lidaojian" => "lidaojian006@163.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/JDB_IMPro.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/lidaojian/JDB_IMPro.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.requires_arc = true
 
-  s.source_files = 'JDB_IMPro/Classes/**/*'
-  
+  #s.source_files = 'JDB_IMPro/Classes/**/*'  初始化后的这样在真正引入的时候没有目录
+  s.source_files = 'JDB_IMPro/Classes'
+      s.subspec 'JDBMRC' do |jDBMRC|
+          jDBMRC.requires_arc = false
+          jDBMRC.source_files = 'JDB_IMPro/Classes/JDBMRC/*.{h,m}'
+      end
+
+      s.subspec 'JDBIMView' do |jDBIMView|
+         jDBIMView.source_files = 'JDB_IMPro/Classes/JDBIMView/*.{h,m}'
+      end
+
+
+
   # s.resource_bundles = {
   #   'JDB_IMPro' => ['JDB_IMPro/Assets/*.png']
   # }

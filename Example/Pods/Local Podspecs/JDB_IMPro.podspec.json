@@ -1,0 +1,31 @@
+{
+  "name": "JDB_IMPro",
+  "version": "0.1.0",
+  "summary": "A short description of JDB_IMPro.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/JDB_IMPro",
+  "license": "MIT",
+  "authors": {
+    "lidaojian": "lidaojian006@163.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/JDB_IMPro.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "JDB_IMPro/Classes",
+  "subspecs": [
+    {
+      "name": "JDBMRC",
+      "requires_arc": false,
+      "source_files": "JDB_IMPro/Classes/JDBMRC/*.{h,m}"
+    },
+    {
+      "name": "JDBIMView",
+      "source_files": "JDB_IMPro/Classes/JDBIMView/*.{h,m}"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.0):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.0)
+  - FBSnapshotTestCase/Core (2.1.0)
+  - FBSnapshotTestCase/SwiftSupport (2.1.0):
+    - FBSnapshotTestCase/Core
+  - JDB_IMPro (0.1.0):
+    - JDB_IMPro/JDBIMView (= 0.1.0)
+    - JDB_IMPro/JDBMRC (= 0.1.0)
+  - JDB_IMPro/JDBIMView (0.1.0)
+  - JDB_IMPro/JDBMRC (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - JDB_IMPro (from `../`)
+
+EXTERNAL SOURCES:
+  JDB_IMPro:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d
+  JDB_IMPro: 4ae0060306d43e8a0b79d15fedcbca42d827e648
+
+PODFILE CHECKSUM: 13c7e127cd72db0c038282ef4228c0db57dac2af
+
+COCOAPODS: 1.0.0
